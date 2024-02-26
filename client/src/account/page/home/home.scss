@@ -1,0 +1,106 @@
+.container-home {
+    .home-header-top {
+        .home-header {
+            position: absolute;
+            z-index: 10;
+            justify-content: space-between;
+            padding: 10px 20px 0px 50px;
+            width: 100%;
+            gap: 100px;
+
+            .home-header-row-2 {
+                gap: 10px;
+            }
+        }
+
+        .home-background-img {
+            position: absolute;
+            z-index: -1;
+
+
+            .img-color-purple {
+                position: absolute;
+                z-index: 1;
+            }
+
+            .img-color-pink {
+                position: absolute;
+                z-index: -1;
+                width: 331px;
+                height: 378px;
+                left: 100px;
+                background: rgba(243, 196, 251, 0.6);
+                filter: blur(50px);
+            }
+
+            .img-color-blue {
+                padding-top: 100px;
+            }
+        }
+
+        .home-body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 140px 0px 0px 50px;
+
+            h1 {
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 96px;
+            }
+
+            p {
+                font-weight: 150;
+            }
+        }
+
+
+        .btn-login-home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 0px;
+            gap: 10px;
+
+
+            p {
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 1.5rem;
+                padding: 5px 50px;
+                background-color: white;
+                box-shadow: 0 0 8px -1px #989595;
+                border-radius: 10px;
+            }
+
+            a {
+                cursor: pointer;
+                font-weight: 100;
+                font-size: .750rem;
+                text-decoration: underline rgb(162, 159, 159)
+            }
+
+            .line-home-body {
+                padding-top: 10px;
+                color: rgb(111, 109, 109);
+                font-size: .900rem;
+                font-weight: 900;
+
+                hr:first-child {
+                    margin-right: 10px;
+                }
+
+                hr:last-child {
+                    margin-left: 10px;
+                }
+
+                hr {
+                    background-color: rgb(111, 109, 109);
+                    margin-top: 11px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
