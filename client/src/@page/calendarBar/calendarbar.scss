@@ -1,0 +1,31 @@
+.container-calendar {
+    border: 1px solid black;
+    text-align: center;
+
+    .container-date {
+        border: 1px solid red;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        .list-date {
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            padding: 5px 8px;
+
+            .list-date-tanggal {
+                border: 1px solid orange;
+            }
+        }
+    }
+}
+
+/* Group 38 */
+/* Group 35 */
+
+// position: absolute;
+// width: 48px;
+// height: 68px;
+// left: 359px;
+// top: 90px;
