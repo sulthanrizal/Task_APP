@@ -2,7 +2,7 @@ import { Box, ChakraProvider } from '@chakra-ui/react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import DashboardContainer from './@components/dasboardContainer';
-import router from './router';
+import router from './@router';
 
 function App() {
   return (
