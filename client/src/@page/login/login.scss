@@ -64,7 +64,9 @@
                 border-radius: 5px;
                 background: white;
                 width: 100vw;
-
+                input:focus{
+                    outline: none;
+                }
                 input {
                     padding-bottom: 4px;
                     width: 100%;

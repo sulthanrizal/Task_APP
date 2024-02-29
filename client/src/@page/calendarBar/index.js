@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import './calendarbar.scss'
 import { useEffect, useState } from "react";
 import moment from "moment";
@@ -9,8 +9,6 @@ const CalendarBar = () => {
     const [date, setDate] = useState([])
     const today = new Date();
     const listDay = () => {
-        // const a = 1;
-        // const b = 7;
         const array = []
         const firstDate = moment(today).format("YYYY-M-D")
         const endDate = moment(today).add('day', 7).format("YYYY-M-D");
@@ -28,18 +26,21 @@ const CalendarBar = () => {
 
     return (
         <Box className="container-calendar">
-            <Box>Today</Box>
+            <Box className="calendar-title">Today</Box>
             <Flex className="container-date">
                 {
-                    date.map((tanggal) => {
+                    date.map((tanggal,index) => {
                         return (
-                            <Box className="list-date">
+                            <Box className="list-date" key={index}>
                                 <Box className="list-date-day">
-                                    {moment(tanggal).format('ddd')}
+                                    <Text>
+                                     {moment(tanggal).format('ddd')}
+                                    </Text>
                                 </Box>
-
                                 <Box className="list-date-tanggal">
-                                    {moment(tanggal).format('D')}
+                                    <Text>
+                                     {moment(tanggal).format('D')}
+                                    </Text>
                                 </Box>
                             </Box>
                         )
