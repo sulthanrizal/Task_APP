@@ -2,8 +2,8 @@ import Login from "../@page/login";
 import Home from "../@page/home";
 import Register from "../@page/register";
 import Example from "../@page/example";
-import TodosList from "../@page/todosList";
 import TodoBox from "@page/todoBox";
+import TodoAdd from "@page/todoadd";
 
 
 const router = [
@@ -24,8 +24,8 @@ const router = [
         element: <Example />
     },
     {
-        path: 'todoslist',
-        element: <TodosList />
+        path: 'todoadd',
+        element: <TodoAdd/>
     },
     {
         path: 'todobox',
