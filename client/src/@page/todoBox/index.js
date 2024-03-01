@@ -1,5 +1,5 @@
 import CalendarBar from "@page/calendarBar";
-import TodosList from "@page/todosList";
+import TodosList from "@page/todoList";
 import moment from "moment";
 import { useState } from "react";
 import './todobox.scss'
