@@ -1,7 +1,7 @@
 import { onClickNav } from '@components/helperOnClick'
 import './todoadd.scss'
 import { useNavigate } from 'react-router-dom'
-import { createTodos } from '@page/todosList/helpers/crud'
+import { createTodos } from '@page/helpers/crud'
 import { useState } from 'react'
 import { useToast } from '@chakra-ui/react'
 import Calendar from 'react-calendar'
