@@ -1,9 +1,10 @@
 .container-calendar {
     background-color: #F3C4FB;
     text-align: center;
-    padding-top:50px ;
+    padding-top: 50px;
     height: 178px;
-    .calendar-title{
+
+    .calendar-title {
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
@@ -15,28 +16,31 @@
         gap: 10px;
         justify-content: center;
 
-        .list-date:active{
-            background-color: #BA68C8;
-            .list-date-day{
+        .list-date:active {
+            // background-color: #BA68C8;
+
+            .list-date-day {
                 font-weight: 700;
             }
         }
+
         .list-date {
             display: flex;
             flex-direction: column;
             width: 48px;
             height: 68px;
             border-radius: 12px;
-            background-color: #DEB5E4;
+            // background-color: #DEB5E4;
             gap: 5px;
-             
-            .list-date-day{
+
+            .list-date-day {
                 margin-top: 5px;
                 font-size: 12px;
                 font-weight: 500;
                 line-height: 18px;
             }
-           .list-date-tanggal {
+
+            .list-date-tanggal {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -51,4 +55,3 @@
         }
     }
 }
-
