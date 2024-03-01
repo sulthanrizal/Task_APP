@@ -1,0 +1,55 @@
+.container-todoitem {
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 10px;
+
+    // mode edit
+    .flex-todoitem-edit {
+        display: flex;
+        align-items: center;
+        background-color: white;
+
+        .input-todoitem-first {
+            background-color: blue;
+            padding-left: 10px;
+            margin-right: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .input-todoitem-last {
+            background-color: yellow;
+            padding-left: 10px;
+            color: black;
+            border-radius: 5px;
+        }
+
+        span {
+            padding-right: 10px;
+        }
+
+
+
+        input {
+            padding: 5px;
+        }
+    }
+
+
+    // mode no edit
+    .flex-todoitem {
+        display: flex;
+        align-items: center;
+    }
+
+    .row-todoitem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 999999px;
+        border: 1px solid #D9D9D9;
+        background: #F5F5F5;
+    }
+}
