@@ -1,121 +1,146 @@
-.container-todoadd{
+.container-todoadd {
     border: 1px solid black;
     background-color: #BDE0FE;
     height: 100vh;
-    .header-todoadd{
+
+    .header-todoadd {
         border: 1px solid red;
         flex-direction: column;
         align-items: flex-end;
         padding: 30px 20px 0px 20px;
-        .row-header-todoadd{
+
+        .row-header-todoadd {
             gap: 102px;
-            span{
-            width: 65px;
-            height: 65px;
-            background-color: white;
+
+            span {
+                width: 65px;
+                height: 65px;
+                background-color: white;
             }
-            .back-todoadd{
+
+            .back-todoadd {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 height: 56px;
                 width: 56px;
-                background-color:#F5F5F5;
+                background-color: #F5F5F5;
                 border-radius: 999999px;
             }
         }
-        .col-header-todoadd{
+
+        .col-header-todoadd {
             flex-direction: column;
             width: 100%;
             text-align: center;
         }
     }
-    .body-todoadd{
+
+    .body-todoadd {
         padding: 30px 20px;
         flex-direction: column;
         gap: 10px;
-        .input-todoadd{
+
+        .input-todoadd {
             background-color: #FDFDFD;
             border-radius: 12px;
             padding: 15px;
-            input:focus{
+
+            input:focus {
                 outline: none;
             }
-            input{
-            width: 100%;
-            border-bottom:1px solid  rgb(111, 109, 109);
+
+            input {
+                width: 100%;
+                border-bottom: 1px solid rgb(111, 109, 109);
 
             }
         }
     }
-    .body-list-color-todoadd{
+
+    .body-list-color-todoadd {
         flex-direction: column;
         gap: 10px;
-        span{
+
+        span {
             padding-left: 40px;
             font-weight: 700;
             font-size: 14px;
             line-height: 21px;
         }
-        .list-color-todoadd{
+
+        .list-color-todoadd {
             justify-content: center;
             gap: 15px;
-            .list-color-lightgreen{
+
+            .list-color-lightgreen {
                 border: 3px solid white;
-                border-radius:9999999px;
+                border-radius: 9999999px;
                 height: 32px;
                 width: 32px;
                 background-color: #ADF7B6;
             }
-            .list-color-purple{
+
+            .list-color-purple {
                 border: 3px solid white;
-                border-radius:9999999px;
+                border-radius: 9999999px;
                 height: 32px;
                 width: 32px;
                 background-color: #A817C0;
             }
-            .list-color-crem{
+
+            .list-color-crem {
                 border: 3px solid white;
-                border-radius:9999999px;
+                border-radius: 9999999px;
                 height: 32px;
                 width: 32px;
-                background: #FFC09F; ;
+                background: #FFC09F;
+                ;
             }
-            .list-color-lightblue{
+
+            .list-color-lightblue {
                 border: 3px solid white;
-                border-radius:9999999px;
+                border-radius: 9999999px;
                 height: 32px;
                 width: 32px;
                 background: #8FFFF8;
             }
-            .list-color-red{
+
+            .list-color-red {
                 border: 3px solid white;
-                border-radius:9999999px;
+                border-radius: 9999999px;
                 height: 32px;
                 width: 32px;
                 background: #CC2222;
             }
-            .list-color-mossgreen{
+
+            .list-color-mossgreen {
                 border: 3px solid white;
-                border-radius:9999999px;
+                border-radius: 9999999px;
                 height: 32px;
                 width: 32px;
                 background: #FBF1BA;
             }
-            .list-color-lightpurple{
+
+            .list-color-lightpurple {
                 border: 3px solid white;
-                border-radius:9999999px;
+                border-radius: 9999999px;
                 height: 32px;
                 width: 32px;
                 background: #7075E5;
             }
-            .list-color-pink{
+
+            .list-color-pink {
                 border: 3px solid white;
-                border-radius:9999999px;
+                border-radius: 9999999px;
                 height: 32px;
                 width: 32px;
                 background: #FF36F7;
             }
         }
+    }
+
+    .body-reapet-todoadd {
+        padding: 20px;
     }
 }
