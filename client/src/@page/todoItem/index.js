@@ -1,11 +1,21 @@
-const { Box } = require("@chakra-ui/react")
+import { useState } from 'react'
+import './todoitem.scss'
+import { deleteTodos, readTodos } from '@page/helpers/crud'
+const { Box, Flex } = require("@chakra-ui/react")
 
 
-const TodoItem = ({ todo }) => {
+const TodoItem = ({ todo, setTodos }) => {
+    const [edit, setEdit] = useState(false)
+
     return (
-        <Box className="comtainer-todoitem">
-            {todo.title}
-        </Box>
+        <Flex className="container-todoitem" style={{ backgroundColor: todo.backgroundColor }}>
+            <Box className="flex-todoitem">
+                {todo.title}
+            </Box>
+            <Box className="row-todoitem">
+                <span onClick={() => { deleteTodos({ data: todo, refechTodos: () => { readTodos({ setTodos }) } }) }}>X</span>
+            </Box>
+        </Flex >
     )
 }
 export default TodoItem;
