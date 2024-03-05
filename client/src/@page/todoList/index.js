@@ -1,4 +1,4 @@
-import { Box, Button, Flex, background } from "@chakra-ui/react"
+import { Box, Button, Flex, Text, background } from "@chakra-ui/react"
 import { readTodos } from "../helpers/crud";
 import { useEffect, useState } from "react";
 import TodoItem from "@page/todoItem";
@@ -12,14 +12,13 @@ const TodosList = ({ selectedDate }) => {
 
     useEffect(() => {
         readTodos({ setTodos })
-        // readTodos()
     }, [])
 
     return (
         <Box className="container-todolist">
-            <Flex className="header-todolist">
-                list
-            </Flex>
+            <Box className="header-todolist">
+                <Text>YOUR TASK TODAY</Text>
+            </Box>
             {/* {console.log(todos, 'ini todo')} */}
             {
                 todos.map((todo, index) => {
@@ -32,9 +31,6 @@ const TodosList = ({ selectedDate }) => {
                 })
 
             }
-            <Box className="footer-todolist">
-                <Button className="btn-footer-todolist" onClick={() => { onClickNav({ path: '/todoadd', navigate }) }}>+</Button>
-            </Box>
         </Box>
     )
 }
