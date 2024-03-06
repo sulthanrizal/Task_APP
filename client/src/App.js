@@ -12,9 +12,9 @@ function App() {
           <DashboardContainer>
             <Routes>
               {
-                router.map(({ path, element },index) => {
+                router.map(({ path, element }, index) => {
                   return (
-                    <Route  key={index} path={path} element={element} />
+                    <Route key={index} path={path} element={element} />
                   )
                 })
               }
