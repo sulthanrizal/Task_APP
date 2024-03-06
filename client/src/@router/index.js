@@ -4,6 +4,8 @@ import Register from "../@page/register";
 import Example from "../@page/example";
 import TodoBox from "@page/todoBox";
 import TodoAdd from "@page/todoadd";
+import TodoEdit from "@page/todoEdit";
+import Profile from "@page/profile";
 
 
 const router = [
@@ -25,13 +27,21 @@ const router = [
     },
     {
         path: 'todoadd',
-        element: <TodoAdd/>
+        element: <TodoAdd />
     },
     {
         path: 'todobox',
         element: <TodoBox />
+    },
+    {
+        path: 'todoedit:id',
+        element: <TodoEdit />
     }
-
+    ,
+    {
+        path: 'Profile',
+        element: <Profile />
+    }
 ]
 
 export default router;
