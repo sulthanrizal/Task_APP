@@ -1,0 +1,42 @@
+.container-todobox {
+    height: 100vh;
+
+    .footer-todobox {
+        display: flex;
+        position: sticky;
+        width: 100%;
+        bottom: 0;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 525px;
+
+        .btn-footer-todobox-top {
+            background-color: #F6F6F6;
+            display: flex;
+            justify-content: center;
+            border-radius: 12px;
+            filter: drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.3));
+
+            button {
+                width: 200px;
+                padding: 20px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+
+        .btn-footer-todobox-bottom {
+            background-color: #f5f5f5;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 88px;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1;
+        }
+    }
+}
