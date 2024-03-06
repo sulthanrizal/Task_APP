@@ -7,6 +7,9 @@ import { useToast } from '@chakra-ui/react'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 import moment from 'moment'
+import ImgCalender from '@page/login/imgSvg/imgCalendar'
+import ImgListCheck from '@page/login/imgSvg/imgListCheck'
+import ImgUser from '@page/login/imgSvg/imgUser'
 const { Box, Flex, Text } = require("@chakra-ui/react")
 
 
@@ -14,7 +17,6 @@ const TodoAdd = () => {
     const navigate = useNavigate()
     const [add, setAdd] = useState({ title: '', completed: false, backgroundColor: null, type: "" })
     const toast = useToast()
-
     return (
         <Box className="container-todoadd">
             <Flex className="header-todoadd">
@@ -34,7 +36,6 @@ const TodoAdd = () => {
                 {
                     console.log(add, 'ini data')
                 }
-                <button onClick={() => createTodos({ data: add, navigate, toast })} >submit</button>
             </Flex>
             <Flex className='body-list-color-todoadd'>
                 <span>Card Color</span>
@@ -55,8 +56,24 @@ const TodoAdd = () => {
                         { ...add, date: moment(value).format('YYYY-MM-DD') }
                     )
                 }} />
-            </Box>
 
+            </Box>
+            <Box className='footer-todoadd'>
+                <Box className='btn-footer-todoadd-top'>
+                    <button onClick={() => createTodos({ data: add, navigate, toast })} >Add</button>
+                </Box>
+                <Box className='btn-footer-todoadd-bottom'>
+                    <Box className='btn-img-todoadd'>
+                        <ImgCalender />
+                    </Box>
+                    <Box className='btn-img-todoadd'>
+                        <ImgListCheck />
+                    </Box>
+                    <Box className='btn-img-todoadd'>
+                        <ImgUser onClick />
+                    </Box>
+                </Box>
+            </Box>
         </Box>
 
     )
